@@ -1,11 +1,15 @@
-options	noreplace
-		errors=1
-		compress=yes
-		mprint 
-		nofmterr
-		minoperator
-		fmtsearch = (frmtlib.eharsfmt); run;
+options	
+	noreplace
+	compress=yes
 
-/*options mautosource*/
-/*sasautos=(projauto allauto*/
-/*sasautos);*/
+	errors=1
+	
+	fmtsearch = (frmtlib.eharsfmt)
+	nofmterr
+
+	mprint 
+	minoperator
+
+	mautosource 
+	sasautos=(); 
+run;
